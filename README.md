@@ -29,4 +29,4 @@
 - delete message( by sender only using token concept)  
 - Get all messages sent to this user ( with the information of the sender and receiver )  
 - Get all messages sent by this user ( with the information of the sender and receiver )(admin only)  
--Get messages  sent today or yesterday
+- Get messages  sent today or yesterday
