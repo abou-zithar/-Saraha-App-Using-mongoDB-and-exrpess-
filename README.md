@@ -1,20 +1,20 @@
-# -Saraha-App-Using-mongoDB-and-exrpess-
+# Saraha-App-Using-mongoDB-and-exrpess-
 (Saraha App): Using mongoDB and exrpess   <br>
-***Create two modules : <br>
-User module:<br>
-- name<br>
-- Email <br>
+## Create two modules : 
+### User module:
+- name
+- Email 
 - Password 
 - phone  
 - role 
 - profile picture  
--cover pictures (array of pictures)  
-message module: 
+- cover pictures (array of pictures)  
+### message module: 
 - content  
 - send to => ref to user module 
 - send by => ref to user module(optional) 
  
- **User module APIs :  
+ ## User module APIs :  
  - signUp( hash password before save it in the database and encrypt phone ) (apply joi validation)   
  - signIn (apply joi validation)   
  - updateUser ( account owner only can fo this api by using token concept) (apply joi validation)   
@@ -24,7 +24,7 @@ message module:
  - get deleted users ( admin only ) 
  - add profile picture (single picture)(delete the existing one then add the new picture) 
  - add cover pictures (array of pictures)  
- **message module APIs :   
+ ## message module APIs :   
 - send message ( don’t send send by manually in body or params you must take it from the token) (apply joi validation)  
 - delete message( by sender only using token concept)  
 - Get all messages sent to this user ( with the information of the sender and receiver )  
